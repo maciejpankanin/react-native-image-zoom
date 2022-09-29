@@ -1,3 +1,4 @@
+import { ReactNode } from 'react'
 import { GestureResponderEvent, PanResponderGestureState, LayoutChangeEvent, ViewStyle } from 'react-native';
 
 export interface ICenterOn {
@@ -23,6 +24,7 @@ export interface IOnClick {
 }
 
 export class ImageZoomProps {
+  public children: ReactNode;
   /**
    * 操作区域宽度
    */
